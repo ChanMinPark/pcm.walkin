@@ -18,7 +18,7 @@ public class BasicServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		super.doPost(req, resp);
+		//super.doPost(req, resp);
 		
 		PrintWriter out = resp.getWriter();
 		out.println("Basic Post 요청에 대한 응답입니다.");
@@ -29,8 +29,7 @@ public class BasicServlet extends HttpServlet {
 	 */
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		super.doGet(req, resp);
+		resp.setContentType("text/plain;charset=UTF-8");
 		
 		PrintWriter out = resp.getWriter();
 		out.println("Basic Get 요청에 대한 응답입니다.");
@@ -42,7 +41,7 @@ public class BasicServlet extends HttpServlet {
 	@Override
 	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		super.doPut(req, resp);
+		//super.doPut(req, resp);
 		
 		PrintWriter out = resp.getWriter();
 		out.println("Basic Put 요청에 대한 응답입니다.");
@@ -54,7 +53,7 @@ public class BasicServlet extends HttpServlet {
 	@Override
 	protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		super.doDelete(req, resp);
+		//super.doDelete(req, resp);
 		
 		PrintWriter out = resp.getWriter();
 		out.println("Basic Delete 요청에 대한 응답입니다.");
