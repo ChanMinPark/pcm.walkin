@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title>md2html</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.3/showdown.min.js"></script>
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<h1>Markdown to Html Parsing</h1>
+<br>
+<textarea id="origintext" rows="20" cols="100"></textarea>
+<input type="submit" id="bnt_transform" value="transform" />
+
+<br>
+<br>
+
+
+<div id="content"></div>
+<script>
+	$("#bnt_transform").click(function() {
+		var pre_marked = $('#origintext').val();
+		
+		var converter = new showdown.Converter();
+        var ret = converter.makeHtml(pre_marked);
+        
+        document.getElementById('content').innerHTML=ret
+	});
+</script>
+
+</body>
+
+</html>
