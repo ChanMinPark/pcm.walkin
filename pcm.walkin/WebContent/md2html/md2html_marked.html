@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title>md2html</title>
+</head>
+<body>
+<h1>Markdown to Html Parsing</h1>
+<br>
+<textarea id="origintext" rows="20" cols="100"></textarea>
+<input type="submit" id="bnt_transform" value="transform" />
+
+<br>
+<br>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.min.js"></script>
+<script src="js/jquery.min.js"></script>
+
+<div id="content"></div>
+<script type="text/javascript">
+	$("#bnt_transform").click(function() {
+		var pre_marked = $('#origintext').val();
+    	//document.getElementById('content').innerHTML =
+    	//  marked('# Marked in browser\n\nRendered by **marked**.\n\n![](https://www.brunt.co/assets/images/visuals/main_product_7.jpg)');
+		document.getElementById('content').innerHTML = marked(pre_marked);
+	});
+</script>
+
+</body>
+
+</html>
