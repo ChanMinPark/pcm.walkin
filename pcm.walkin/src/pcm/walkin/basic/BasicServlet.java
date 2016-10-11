@@ -1,6 +1,4 @@
-package pcm.walkin;
-
-import org.elasticsearch.common.xcontent.XContentFactory.*;
+package pcm.walkin.basic;
 
 import java.io.IOException;
 import java.io.PrintWriter;
