@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/contact/*")
 public class ContactServlet extends HttpServlet {
-	public static final String PCM_CLUSTER = "walkin";
+	public static final String PCM_CLUSTER = "pcm.walkin";
 	public static final String PCM_INDEX = "walkin_store";
 	public static final String PCM_CONTACT_TYPE = "contact";
 
