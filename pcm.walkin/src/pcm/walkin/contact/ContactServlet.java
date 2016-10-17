@@ -21,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/contact/*")
 public class ContactServlet extends HttpServlet {
-	public static final String PCM_CLUSTER = "pcm.walkin";
+	public static final String PCM_CLUSTER = "walkin";
 	public static final String PCM_INDEX = "walkin_store";
 	public static final String PCM_CONTACT_TYPE = "contact";
 
@@ -48,7 +48,7 @@ public class ContactServlet extends HttpServlet {
 		esclient = TransportClient.builder().settings(settings).build()
 				.addTransportAddress(
 						new InetSocketTransportAddress(
-								InetAddress.getLocalHost(),9200));
+								InetAddress.getByName("127.0.0.1"),9200));
 		
 		// walkin_store 인덱스의 contact 타입에서 id가 1인 document를 가져옵니다.
 		GetResponse response = esclient.prepareGet(PCM_INDEX, PCM_CONTACT_TYPE, "1").get();
