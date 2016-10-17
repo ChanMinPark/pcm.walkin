@@ -53,6 +53,7 @@ public class ContactServlet extends HttpServlet {
 		// walkin_store 인덱스의 contact 타입에서 id가 1인 document를 가져옵니다.
 		GetResponse response = esclient.prepareGet(PCM_INDEX, PCM_CONTACT_TYPE, "1").get();
 		
+		// 검색된 결과를 Json 형식의 문자열로 변환합니다.
 		Map<String, Object> resultMap = response.getSource();
 		Gson gsonObj = new Gson();
 		String resultStr = gsonObj.toJson(resultMap);
