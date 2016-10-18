@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>File Upload</title>
+<script src="js/jquery.min.js"></script>
+
+</head>
+<body>
+	<h1>File Upload to Server</h1>
+	<br>
+
+	<form method="post" action="/upload-test.do" enctype="multipart/form-data">
+		제목: <input type="text" name="title" placeholder="제목을 입력하세요"><br>
+		파일1: <input type="file" name="filename1"><br>
+		파일2: <input type="file" name="filename2"><br>
+		<input type="submit" value="업로드">
+	</form>
+
+</body>
+
+</html>
