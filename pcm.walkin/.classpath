@@ -13,7 +13,5 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/PCM/Desktop/E드라이브역할/라이브러리/jar/elasticsearch-2.4.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/PCM/Desktop/E드라이브역할/라이브러리/jar/gson-2.7.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
