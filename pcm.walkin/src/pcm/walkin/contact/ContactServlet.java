@@ -28,9 +28,24 @@ public class ContactServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		resp.setContentType("text/plain;charset=UTF-8");
+
+		// ElasticSearch Client 객체 생성
+		TransportClient esclient = null;
+
+		// 클러스터 이름을 직접 지정하도록 설정.
+		Settings settings = Settings.settingsBuilder().put("cluster.name", PCM_CLUSTER).build();
+
+		// 직접 지정한 클러스터 셋팅을 적용하고 설치된 ElasticSearch에 접속.
+		// 주소는 로컬호스트, 포트는 9200
+		esclient = TransportClient.builder().settings(settings).build()
+				.addTransportAddress(
+						new InetSocketTransportAddress(
+								InetAddress.getLocalHost(),9300));
+
+		/*search부분 추가해야함.*/
 		
-		PrintWriter out = resp.getWriter();
-		out.println("Basic Post 요청에 대한 응답입니다.");
+		//PrintWriter out = resp.getWriter();
+		//out.println("Basic Post 요청에 대한 응답입니다.");
 	}
 	
 	@Override
