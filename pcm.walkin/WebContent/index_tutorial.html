@@ -8,8 +8,18 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<style>
-		.container{
+		.container {
 			padding: 80px 120px;
+		}
+		.person {
+			border: 10px solid transparent;
+			margin-bottom: 25px;
+			width: 80%;
+			height: 80%;
+			opacity: 0.7;
+		}
+		.person:hover {
+			border-color: #f1f1f1;
 		}
 	</style>
 </head>
@@ -19,6 +29,21 @@
 	<h3>ChanMin Park</h3>
 	<p>안녕하세요. 저는 <em>박찬민</em>입니다.</p>
 	<p>Bootstrap을 배우기 위해서 실습하고 있습니다.</p>
+	<br>
+	<div class="row">
+		<div class="col-sm-4">
+			<p><strong>아기 찬민</strong></p><br>
+			<img src="image/chanmin1.jpg" class="img-circle person" alt="Baby" width="255" height="255">
+		</div>
+		<div class="col-sm-4">
+			<p><strong>멋진 찬민</strong></p><br>
+			<img src="image/chanmin2.jpg" class="img-circle person" alt="Handsome" width="255" height="255">
+		</div>
+		<div class="col-sm-4">
+			<p><strong>웃긴 찬민</strong></p><br>
+			<img src="image/chanmin3.jpg" class="img-circle person" alt="Funny" width="255" height="255">
+		</div>
+	</div>
 </div>
 
 </body>
