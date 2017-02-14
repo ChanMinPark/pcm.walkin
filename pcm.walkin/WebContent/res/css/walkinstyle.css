@@ -1,7 +1,12 @@
+html body {
+  height: 100%;
+}
+
 .jumbotron {
   padding-top: 70px;
   background-color: #FF6600;
   color: #ffffff;
+  margin-bottom: 0px;
 }
 
 .navbar {
@@ -27,4 +32,11 @@
 .navbar-default .navbar-toggle {
   border-color: transparent;
   color: #fff !important;
+}
+
+.walkin-main-bg-1 {
+  background-image: url("../img/main_bg_1.png");
+  background-color: #cccccc;
+  background-size: 100% 100%;
+  height: 200px;
 }
