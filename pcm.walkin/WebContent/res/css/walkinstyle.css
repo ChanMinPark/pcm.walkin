@@ -32,7 +32,7 @@
 
 .walkin-blackbar {
   height: 15px;
-  background-color: #cccccc;
+  background-color: #484848;
 }
 
 .walkin-main-bg {
@@ -42,4 +42,6 @@
 .walkin-main-bg .walkin-main-bg-img {
   width: 100%;
   height: auto;
+  -webkit-filter: opacity(30%); /* Safari */
+  filter: opacity(30%);
 }
