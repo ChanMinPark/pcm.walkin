@@ -44,3 +44,10 @@
   height: auto;
   opacity: 0.3;
 }
+
+@media (min-width: 760px) {
+  .walkin-col-2 {
+    float: left;
+    width: 50%;
+  }
+}
