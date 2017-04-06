@@ -54,6 +54,16 @@
   color: #495057;
 }
 
+.walkin-title>hr {
+  width: 500px;
+  height: 1px;
+  background: #bbb;
+  background-image: -webkit-linear-gradient(left, #eee, #777, #eee);
+  background-image: -moz-linear-gradient(left, #eee, #777, #eee);
+  background-image: -ms-linear-gradient(left, #eee, #777, #eee);
+  background-image: -o-linear-gradient(left, #eee, #777, #eee);
+}
+
 @media (min-width: 760px) {
   .walkin-col-2 {
     float: left;
