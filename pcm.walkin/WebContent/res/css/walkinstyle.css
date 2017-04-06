@@ -45,6 +45,15 @@
   opacity: 0.3;
 }
 
+.walkin-title {
+  text-align: center;
+  letter-spacing: 8px;
+}
+
+.walkin-text-gray {
+  color: #495057;
+}
+
 @media (min-width: 760px) {
   .walkin-col-2 {
     float: left;
