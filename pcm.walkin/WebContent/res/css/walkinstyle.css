@@ -64,6 +64,13 @@
   background-image: -o-linear-gradient(left, #eee, #777, #eee);
 }
 
+.walkin-profile-img {
+  border-radius: 50%;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 20px;
+}
+
 @media (min-width: 760px) {
   .walkin-col-2 {
     float: left;
