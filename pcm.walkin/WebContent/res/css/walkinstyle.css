@@ -64,6 +64,12 @@
   background-image: -o-linear-gradient(left, #eee, #777, #eee);
 }
 
+.walkin-profile-img-container {
+  overflow: auto;
+  /*margin: auto;*/
+  text-align: center;
+}
+
 .walkin-profile-img {
   border-radius: 50%;
   width: 100%;
