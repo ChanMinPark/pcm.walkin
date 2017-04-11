@@ -69,6 +69,29 @@
   width: 100%;
   max-width: 200px;
   margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.walkin-profile-content {
+  width: 800px;
+  margin: auto;
+}
+
+.walkin-profile-item{
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 20px
+}
+
+.walkin-profile-item-left {
+  width: 20%;
+  float: left;
+  text-align: left;
+}
+
+.walkin-profile-item-right {
+  width: 80%;
+  float: left;
 }
 
 @media (min-width: 760px) {
