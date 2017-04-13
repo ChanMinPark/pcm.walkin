@@ -39,10 +39,25 @@
   position: relative;
 }
 
+.walkin-col-2 {
+  float: left;
+  width: 50%;
+}
+
 .walkin-main-bg .walkin-main-bg-img {
+  /*position: absolute;*/
   width: 100%;
   height: auto;
   opacity: 0.3;
+}
+
+.walkin-main-bg-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
 }
 
 .walkin-title {
@@ -107,9 +122,9 @@
   text-align: center;
 }
 
-@media (min-width: 760px) {
+@media (max-width: 760px) {
   .walkin-col-2 {
     float: left;
-    width: 50%;
+    width: 100%;
   }
 }
