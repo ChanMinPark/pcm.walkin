@@ -101,6 +101,10 @@
   float: left;
 }
 
+.walkin-profile-detail-link {
+  text-align: center;
+}
+
 @media (min-width: 760px) {
   .walkin-col-2 {
     float: left;
