@@ -84,17 +84,21 @@
 }
 
 .walkin-profile-img-container {
-  overflow: auto;
-  /*margin: auto;*/
-  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 200px;
+  margin: auto;
 }
 
 .walkin-profile-img {
-  border-radius: 50%;
   width: 100%;
-  max-width: 200px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  height: 100%;
+  text-align: center;
+}
+
+.walkin-profile-img img {
+  border-radius: 20%;
+  margin: 10px auto;
 }
 
 .walkin-profile-content {
